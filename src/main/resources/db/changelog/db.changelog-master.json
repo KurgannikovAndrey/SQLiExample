@@ -1,0 +1,82 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "tag":"1",
+        "id": "1",
+        "author": "kekv_u_look_here",
+        "changes": [
+          {
+            "tagDatabase":{
+              "tag":"1"
+            },
+            "createTable": {
+              "tableName": "users_table",
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "type": "int",
+                    "autoIncrement": true,
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "username",
+                    "type": "varchar(8)"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "password",
+                    "type": "varchar(8)"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "changeSet": {
+        "tag":"2",
+        "id": "2",
+        "author": "kekv_u_look_here",
+        "changes": [
+          {
+            "tagDatabase":{
+              "tag":"1"
+            },
+            "createTable": {
+              "tableName": "search_table",
+              "columns": [
+                {
+                  "column": {
+                    "name": "key",
+                    "type": "text",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "value",
+                    "type": "varchar(8)"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+
